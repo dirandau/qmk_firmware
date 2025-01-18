@@ -14,16 +14,19 @@
     "matrix_pins": {
         "direct": [
             ["A8", "B15", "B14", "B13", "B12"],
-            ["B0", "B1", "B2", "B10", "B11",]
+            ["B0", "B1", "B2", "B10", "B11"],
             ["A3", "A4", "A5", "A6", "A7"],
             ["A0", "A1", "A2"]
         ]
+    },
+    "bootmagic": {
+        "matrix": [0, 2]
     },
     "split": {
         "enabled": true,
         "handedness": {
             "pin": "B7"
-        }
+        },
         "serial": {
             "driver": "usart",
             "pin": "B6"
@@ -32,11 +35,14 @@
             "right": {
                 "direct": [
                     ["B12", "B13", "B14", "B15", "A8"],
-                    ["B11", "B10", "B2", "B1", "B0",]
+                    ["B11", "B10", "B2", "B1", "B0"],
                     ["A7", "A6", "A5", "A4", "A3"],
                     ["A2", "A1", "A0"]
                 ]
             }
+        },
+        "bootmagic": {
+            "matrix": [4, 2]
         }
     },
     "processor": "STM32F103",
